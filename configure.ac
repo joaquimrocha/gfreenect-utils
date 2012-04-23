@@ -5,6 +5,16 @@ m4_define([prj_name],       [GFreenect Utils])
 m4_define([prj_short_name], [gfreenectutils])
 m4_define([prj_home],       [http://labs.igalia.com/gfreenect-utils])
 
+# package version number (not shared library version)
+# odd micro numbers indicate in-progress development
+# even micro numbers indicate released versions
+m4_define([prj_version_major], [0])
+m4_define([prj_version_minor], [1])
+m4_define([prj_version_micro], [1])
+
+m4_define([prj_version],
+          [prj_version_major.prj_version_minor.prj_version_micro])
+
 AC_INIT([prj_name],
 	[prj_version],
 	[prj_home])
