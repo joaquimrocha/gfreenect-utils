@@ -27,4 +27,4 @@ depth_file_viewer_SOURCES = \
 	depth-file-viewer.c
 
 depth_file_viewer_LDADD = \
-	$(MAIN_DEPS_LIBS)
+	$(MAIN_DEPS_LIBS) -lm
